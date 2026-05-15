@@ -1,0 +1,128 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BNBNOVA | BNB Chain Token</title>
+  <meta name="description" content="BNBNOVA is a community-driven DeFi token built on BNB Chain. 100M burned, LP locked, 0% tax." />
+  <style>
+    *{box-sizing:border-box;margin:0;padding:0}
+    body{font-family:Arial,Helvetica,sans-serif;background:#050505;color:#fff;overflow-x:hidden}
+    a{text-decoration:none;color:inherit}
+    .bg{position:fixed;inset:0;background:
+      radial-gradient(circle at 20% 10%,rgba(255,191,0,.22),transparent 28%),
+      radial-gradient(circle at 85% 25%,rgba(255,191,0,.16),transparent 30%),
+      linear-gradient(180deg,#050505,#090700 55%,#050505);z-index:-2}
+    .grid{position:fixed;inset:0;background-image:linear-gradient(rgba(255,198,41,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,198,41,.06) 1px,transparent 1px);background-size:48px 48px;opacity:.35;z-index:-1}
+    .wrap{max-width:1180px;margin:auto;padding:28px 22px}
+    nav{display:flex;align-items:center;justify-content:space-between;margin-bottom:70px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:54px;height:54px;border-radius:50%;background:linear-gradient(135deg,#ffd84a,#a66a00);display:flex;align-items:center;justify-content:center;color:#050505;font-size:30px;font-weight:900;box-shadow:0 0 28px rgba(255,191,0,.45)}
+    .brand h2{letter-spacing:1px}
+    .navlinks{display:flex;gap:24px;color:#ddd;font-size:14px}
+    .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:48px;align-items:center;min-height:620px}
+    .badge{display:inline-flex;border:1px solid rgba(255,208,71,.35);background:rgba(255,208,71,.09);padding:10px 16px;border-radius:999px;color:#ffd95a;font-weight:700;margin-bottom:24px}
+    h1{font-size:72px;line-height:.95;font-weight:900;letter-spacing:-2px}
+    .gold{background:linear-gradient(90deg,#ffe680,#ffbf00,#8f6000);-webkit-background-clip:text;background-clip:text;color:transparent}
+    .hero p{margin-top:24px;color:#ccc;font-size:18px;line-height:1.7;max-width:620px}
+    .buttons{display:flex;gap:14px;flex-wrap:wrap;margin-top:30px}
+    .btn{padding:15px 22px;border-radius:16px;font-weight:900;transition:.2s}
+    .btn.primary{background:linear-gradient(90deg,#ffe066,#b97a00);color:#111;box-shadow:0 0 30px rgba(255,191,0,.25)}
+    .btn.secondary{border:1px solid rgba(255,255,255,.15);background:rgba(255,255,255,.06)}
+    .contract{margin-top:24px;border:1px solid rgba(255,255,255,.1);background:rgba(0,0,0,.45);border-radius:18px;padding:16px;color:#aaa;font-size:13px}
+    .contract span{display:block;margin-top:8px;color:#ffd95a;font-family:monospace;word-break:break-all}
+    .orb{height:390px;width:390px;margin:auto;border-radius:50%;border:1px solid rgba(255,208,71,.35);background:radial-gradient(circle,rgba(255,208,71,.18),rgba(0,0,0,.9) 62%);display:flex;align-items:center;justify-content:center;box-shadow:0 0 75px rgba(255,191,0,.2);position:relative}
+    .orb:before,.orb:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(255,208,71,.18)}
+    .orb:before{inset:35px}.orb:after{inset:75px}
+    .orb-inner{text-align:center;z-index:2}
+    .orb .big{font-size:92px;font-weight:900;color:#ffd43b}
+    .orb .small{font-size:25px;font-weight:900;letter-spacing:8px}
+    section{padding:70px 0}
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .card{border:1px solid rgba(255,208,71,.18);background:rgba(0,0,0,.48);border-radius:22px;padding:24px;box-shadow:0 0 22px rgba(255,191,0,.05)}
+    .card .icon{font-size:30px;margin-bottom:14px}
+    .card .label{color:#aaa;font-size:14px}.card .value{font-size:30px;font-weight:900;margin-top:6px}
+    .title{text-align:center;margin-bottom:38px}
+    .title h2{font-size:48px;font-weight:900}.title p{color:#aaa;margin-top:10px}
+    .tokenomics{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .tok{min-height:175px}
+    .tok .percent{font-size:42px;font-weight:900;color:#ffd13d}.tok h3{margin-top:10px}.tok p{color:#aaa;margin-top:7px}
+    .roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}
+    .road h3{font-size:20px;margin:8px 0 14px}.road .phase{color:#ffd13d;font-weight:900}.road li{list-style:none;color:#bbb;margin:8px 0;font-size:14px}
+    .community{border:1px solid rgba(255,208,71,.2);background:linear-gradient(135deg,rgba(255,208,71,.12),rgba(255,255,255,.03));border-radius:28px;text-align:center;padding:46px}
+    .community h2{font-size:42px}.community p{color:#ccc;max-width:720px;margin:16px auto 0;line-height:1.7}
+    footer{text-align:center;color:#777;padding:30px 0;border-top:1px solid rgba(255,255,255,.08)}
+    @media(max-width:900px){.hero{grid-template-columns:1fr}.orb{width:300px;height:300px}h1{font-size:50px}.stats,.tokenomics,.roadmap{grid-template-columns:1fr 1fr}.navlinks{display:none}}
+    @media(max-width:560px){.stats,.tokenomics,.roadmap{grid-template-columns:1fr}h1{font-size:42px}.title h2{font-size:34px}.community h2{font-size:32px}}
+  </style>
+</head>
+<body>
+  <div class="bg"></div><div class="grid"></div>
+  <div class="wrap">
+    <nav>
+      <div class="brand"><div class="logo">B</div><div><h2>BNBNOVA</h2><p style="color:#aaa;font-size:12px">BNB Chain Token</p></div></div>
+      <div class="navlinks"><a href="#tokenomics">Tokenomics</a><a href="#roadmap">Roadmap</a><a href="#community">Community</a></div>
+    </nav>
+
+    <main class="hero">
+      <div>
+        <div class="badge">🔥 100M Burned • 🔒 LP Locked • ⚡ 0% Tax</div>
+        <h1>The Next Wave on <span class="gold">BNB Chain</span></h1>
+        <p>BNBNOVA is a community-driven DeFi token built for long-term growth, transparent tokenomics, and strong community expansion.</p>
+        <div class="buttons">
+          <a class="btn primary" href="https://pancakeswap.finance/swap?outputCurrency=0x5d38ae8adD314489c4d4feF48e2A2568737E2c24" target="_blank">Buy on PancakeSwap</a>
+          <a class="btn secondary" href="https://t.me/BnovaOfficial" target="_blank">Join Telegram</a>
+        </div>
+        <div class="contract">Contract Address<span>0x5d38ae8adD314489c4d4feF48e2A2568737E2c24</span></div>
+      </div>
+      <div class="orb"><div class="orb-inner"><div class="big">B</div><div class="small">NOVA</div><p style="color:#aaa;margin-top:10px">Built on BNB Chain</p></div></div>
+    </main>
+
+    <section>
+      <div class="stats">
+        <div class="card"><div class="icon">🔥</div><div class="label">Burned Forever</div><div class="value">100M</div></div>
+        <div class="card"><div class="icon">🔒</div><div class="label">Liquidity Locked</div><div class="value">49M LP</div></div>
+        <div class="card"><div class="icon">🛡️</div><div class="label">Buy / Sell Tax</div><div class="value">0%</div></div>
+        <div class="card"><div class="icon">🌍</div><div class="label">Community</div><div class="value">Growing</div></div>
+      </div>
+    </section>
+
+    <section id="tokenomics">
+      <div class="title"><h2>Tokenomics</h2><p>Clean, transparent, and built for long-term growth.</p></div>
+      <div class="tokenomics">
+        <div class="card tok"><div class="icon">🔥</div><div class="percent">10%</div><h3>Burned</h3><p>100M BNBNOVA</p></div>
+        <div class="card tok"><div class="icon">🚀</div><div class="percent">15%</div><h3>Marketing</h3><p>150M BNBNOVA</p></div>
+        <div class="card tok"><div class="icon">🌐</div><div class="percent">20%</div><h3>Ecosystem</h3><p>200M BNBNOVA</p></div>
+        <div class="card tok"><div class="icon">👥</div><div class="percent">7%</div><h3>Team</h3><p>70M BNBNOVA</p></div>
+        <div class="card tok"><div class="icon">💎</div><div class="percent">20%</div><h3>Reserve</h3><p>200M BNBNOVA</p></div>
+        <div class="card tok"><div class="icon">🔒</div><div class="percent">5%</div><h3>LP Locked</h3><p>49M BNBNOVA</p></div>
+        <div class="card tok"><div class="icon">⚡</div><div class="percent">23%</div><h3>Growth Fund</h3><p>230M+ BNBNOVA</p></div>
+      </div>
+    </section>
+
+    <section id="roadmap">
+      <div class="title"><h2>Roadmap</h2><p>From launch to ecosystem expansion.</p></div>
+      <div class="roadmap">
+        <div class="card road"><div class="phase">Phase 1</div><h3>Launch Foundation</h3><ul><li>• Token launch</li><li>• 100M burn</li><li>• LP lock</li><li>• Telegram community</li></ul></div>
+        <div class="card road"><div class="phase">Phase 2</div><h3>Community Growth</h3><ul><li>• TikTok campaigns</li><li>• X marketing</li><li>• Holder growth</li><li>• DexScreener update</li></ul></div>
+        <div class="card road"><div class="phase">Phase 3</div><h3>Market Expansion</h3><ul><li>• CoinGecko prep</li><li>• CoinMarketCap prep</li><li>• Partnerships</li><li>• CEX conversations</li></ul></div>
+        <div class="card road"><div class="phase">Phase 4</div><h3>Ecosystem Utility</h3><ul><li>• Staking plans</li><li>• Community rewards</li><li>• Utility integrations</li><li>• Long-term expansion</li></ul></div>
+      </div>
+    </section>
+
+    <section id="community">
+      <div class="community">
+        <h2>Join the BNBNOVA Community</h2>
+        <p>Follow the journey, join the community, and stay updated as BNBNOVA grows across the BNB Chain ecosystem.</p>
+        <div class="buttons" style="justify-content:center">
+          <a class="btn primary" href="https://t.me/BnovaOfficial" target="_blank">Telegram</a>
+          <a class="btn secondary" href="https://bscscan.com/token/0x5d38ae8adD314489c4d4feF48e2A2568737E2c24" target="_blank">BscScan</a>
+          <a class="btn secondary" href="https://www.tiktok.com/@bnovaofficial0?_r=1&_t=ZS-96OIKqjwej1" target="_blank">TikTok</a>
+        </div>
+      </div>
+    </section>
+
+    <footer>© 2026 BNBNOVA. Built on BNB Chain.</footer>
+  </div>
+</body>
+</html>
