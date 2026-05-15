@@ -43,7 +43,7 @@
     .chartBox{border:1px solid rgba(255,208,71,.18);background:rgba(0,0,0,.48);border-radius:24px;padding:18px;overflow:hidden}.chartBox iframe{width:100%;height:520px;border:0;border-radius:18px;background:#111}
     .roadmap{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.road h3{font-size:20px;margin:8px 0 14px}.road .phase{color:#ffd13d;font-weight:900}.road li{list-style:none;color:#bbb;margin:8px 0;font-size:14px}
     .whitepaper{display:grid;grid-template-columns:1fr 1fr;gap:22px;align-items:center;border:1px solid rgba(255,208,71,.2);background:linear-gradient(135deg,rgba(255,208,71,.12),rgba(255,255,255,.03));border-radius:28px;padding:38px}
-    .whitepaper h2{font-size:42px}.whitepaper p{color:#ccc;line-height:1.7;margin-top:14px}.paper-list{display:grid;gap:12px}.paper-list div{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px;color:#ddd}
+    .whitepaper h2{font-size:42px}.whitepaper p{color:#ccc;line-height:1.7;margin-top:14px}.paper-list{display:grid;gap:12px}.paper-list div{background:rgba(0,0,0,.35);border:1px solid rgba(255,255,255,.08);border-radius:16px;padding:14px;color:#ddd}.progress{height:12px;border-radius:999px;background:rgba(255,255,255,.08);overflow:hidden;margin-top:12px}.bar{height:100%;background:linear-gradient(90deg,#ffe066,#b97a00);border-radius:999px}.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:14px}.step{position:relative}.step .num{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#ffd84a,#a66a00);color:#050505;font-weight:900;display:flex;align-items:center;justify-content:center;margin-bottom:12px}.badgeSmall{display:inline-flex;padding:7px 10px;border-radius:999px;background:rgba(255,208,71,.1);border:1px solid rgba(255,208,71,.2);color:#ffd95a;font-size:12px;font-weight:800;margin-top:10px}
     .community{border:1px solid rgba(255,208,71,.2);background:linear-gradient(135deg,rgba(255,208,71,.12),rgba(255,255,255,.03));border-radius:28px;text-align:center;padding:46px}
     .community h2{font-size:42px}.community p{color:#ccc;max-width:720px;margin:16px auto 0;line-height:1.7}
     footer{text-align:center;color:#777;padding:30px 0;border-top:1px solid rgba(255,255,255,.08)}
@@ -104,6 +104,16 @@
       </div>
     </section>
 
+    <section id="dashboard">
+      <div class="title"><h2>BNBNOVA Dashboard</h2><p>Quick project snapshot for new visitors.</p></div>
+      <div class="stats">
+        <div class="card"><div class="icon">🔥</div><div class="label">Burned Supply</div><div class="value">100M</div><div class="badgeSmall">10% Burned</div></div>
+        <div class="card"><div class="icon">🔒</div><div class="label">Locked Liquidity</div><div class="value">49M</div><div class="badgeSmall">LP Locked</div></div>
+        <div class="card"><div class="icon">⚡</div><div class="label">Buy / Sell Tax</div><div class="value">0%</div><div class="badgeSmall">Fair Trading</div></div>
+        <div class="card"><div class="icon">👥</div><div class="label">Community Status</div><div class="value">Early</div><div class="badgeSmall">Growing Daily</div></div>
+      </div>
+    </section>
+
     <section id="features">
       <div class="title"><h2>Why BNBNOVA?</h2><p>A clean foundation for community growth on BNB Chain.</p></div>
       <div class="features">
@@ -111,6 +121,27 @@
         <div class="card feature"><div class="icon">🔒</div><h3>Locked Liquidity</h3><p>LP lock supports transparency and stronger investor confidence.</p></div>
         <div class="card feature"><div class="icon">🔥</div><h3>Deflationary Start</h3><p>100M tokens burned to reduce supply from the beginning.</p></div>
         <div class="card feature"><div class="icon">🚀</div><h3>Growth Focused</h3><p>Marketing, ecosystem, and reserve allocations support future expansion.</p></div>
+      </div>
+    </section>
+
+    <section id="security">
+      <div class="title"><h2>Security & Transparency</h2><p>BNBNOVA focuses on clear public information and safer early-stage structure.</p></div>
+      <div class="features">
+        <div class="card feature"><div class="icon">🔒</div><h3>LP Locked</h3><p>Liquidity lock supports long-term trust and helps reduce sudden liquidity removal risk.</p></div>
+        <div class="card feature"><div class="icon">🔥</div><h3>100M Burned</h3><p>A public burn was completed to reduce supply and support stronger tokenomics.</p></div>
+        <div class="card feature"><div class="icon">🧾</div><h3>Verified Contract</h3><p>Contract and wallet activity can be checked publicly through BscScan.</p></div>
+        <div class="card feature"><div class="icon">⚡</div><h3>0% Tax</h3><p>BNBNOVA currently uses 0% buy and sell tax for simple and fair trading.</p></div>
+      </div>
+    </section>
+
+    <section id="how-to-buy">
+      <div class="title"><h2>How To Buy BNBNOVA</h2><p>Use MetaMask or Trust Wallet on BNB Chain.</p></div>
+      <div class="steps">
+        <div class="card step"><div class="num">1</div><h3>Create Wallet</h3><p>Install MetaMask or Trust Wallet.</p></div>
+        <div class="card step"><div class="num">2</div><h3>Add BNB Chain</h3><p>Make sure your wallet is connected to BNB Smart Chain.</p></div>
+        <div class="card step"><div class="num">3</div><h3>Fund BNB</h3><p>Send BNB to your wallet for swap and gas fees.</p></div>
+        <div class="card step"><div class="num">4</div><h3>Open PancakeSwap</h3><p>Use the official buy button and verify the contract address.</p></div>
+        <div class="card step"><div class="num">5</div><h3>Swap & Hold</h3><p>Swap BNB for BNBNOVA and join the community.</p></div>
       </div>
     </section>
 
@@ -170,6 +201,26 @@
       </div>
     </section>
 
+    <section id="bnb-chain">
+      <div class="title"><h2>Why BNB Chain?</h2><p>BNBNOVA is built on BNB Chain for speed, accessibility, and low-cost transactions.</p></div>
+      <div class="features">
+        <div class="card feature"><div class="icon">⚡</div><h3>Fast Transfers</h3><p>BNB Chain provides quick transaction confirmation for active DeFi users.</p></div>
+        <div class="card feature"><div class="icon">💸</div><h3>Low Fees</h3><p>Lower gas costs make community trading and transfers more accessible.</p></div>
+        <div class="card feature"><div class="icon">🥞</div><h3>PancakeSwap Access</h3><p>BNBNOVA starts with PancakeSwap liquidity, the core DEX of the BNB ecosystem.</p></div>
+        <div class="card feature"><div class="icon">🌍</div><h3>Large Ecosystem</h3><p>BNB Chain has a broad DeFi user base and strong infrastructure for expansion.</p></div>
+      </div>
+    </section>
+
+    <section id="targets">
+      <div class="title"><h2>Community Targets</h2><p>Milestones designed to grow visibility step by step.</p></div>
+      <div class="features">
+        <div class="card feature"><div class="icon">👥</div><h3>1,000 Holders</h3><p>First major community growth target.</p><div class="progress"><div class="bar" style="width:10%"></div></div></div>
+        <div class="card feature"><div class="icon">📈</div><h3>$25K Volume Goal</h3><p>Early DEX activity target for stronger discovery.</p><div class="progress"><div class="bar" style="width:8%"></div></div></div>
+        <div class="card feature"><div class="icon">🌐</div><h3>CoinGecko Prep</h3><p>Preparing the project foundation for listing applications.</p><div class="progress"><div class="bar" style="width:35%"></div></div></div>
+        <div class="card feature"><div class="icon">🏦</div><h3>CEX Readiness</h3><p>Reserve and ecosystem structure prepared for future exchange discussions.</p><div class="progress"><div class="bar" style="width:20%"></div></div></div>
+      </div>
+    </section>
+
     <section id="burn-program">
       <div class="title"><h2>Milestone Burn Program</h2><p>BNBNOVA may introduce milestone-based burns as the community and ecosystem continue to grow.</p></div>
       <div class="roadmap">
@@ -207,6 +258,16 @@
         <div class="card road"><div class="phase">Phase 2</div><h3>Community Growth</h3><ul><li>• TikTok campaigns</li><li>• X marketing</li><li>• Holder growth</li><li>• DexScreener update</li></ul></div>
         <div class="card road"><div class="phase">Phase 3</div><h3>Market Expansion</h3><ul><li>• CoinGecko prep</li><li>• CoinMarketCap prep</li><li>• Partnerships</li><li>• CEX conversations</li></ul></div>
         <div class="card road"><div class="phase">Phase 4</div><h3>Ecosystem Utility</h3><ul><li>• Staking plans</li><li>• Community rewards</li><li>• Utility integrations</li><li>• Long-term expansion</li></ul></div>
+      </div>
+    </section>
+
+    <section id="social-wall">
+      <div class="title"><h2>Community Gallery</h2><p>Follow BNBNOVA across social platforms and support the growth movement.</p></div>
+      <div class="features">
+        <div class="card feature"><div class="icon">🎵</div><h3>TikTok</h3><p>Short-form marketing, community updates, tokenomics posts, and launch content.</p><a class="badgeSmall" href="https://www.tiktok.com/@bnovaofficial0?_r=1&_t=ZS-96OIKqjwej1" target="_blank">Visit TikTok</a></div>
+        <div class="card feature"><div class="icon">𝕏</div><h3>X / Twitter</h3><p>Announcements, updates, milestones, and community growth posts.</p><a class="badgeSmall" href="https://x.com/bnbnovaofficial" target="_blank">Visit X</a></div>
+        <div class="card feature"><div class="icon">💬</div><h3>Telegram</h3><p>Community chat, project support, and holder updates.</p><a class="badgeSmall" href="https://t.me/BnovaOfficial" target="_blank">Join Telegram</a></div>
+        <div class="card feature"><div class="icon">📊</div><h3>DexScreener</h3><p>Live chart, token activity, and market discovery.</p><a class="badgeSmall" href="https://dexscreener.com/bsc/0x5d38ae8adD314489c4d4feF48e2A2568737E2c24" target="_blank">Open Chart</a></div>
       </div>
     </section>
 
